@@ -1,0 +1,42 @@
+{
+  "total_annotations": 148,
+  "total_errors_in_annotations": 841,
+  "planning_errors_found": 259,
+  "positive_samples": 259,
+  "negative_samples": 296,
+  "traces_with_negatives": 148,
+  "traces_without_trace_json": 0,
+  "total_samples": 555,
+  "positive_by_category": {
+    "Goal Deviation": 65,
+    "Resource Abuse": 57,
+    "Task Orchestration": 49,
+    "Context Handling Failures": 47,
+    "Poor Information Retrieval": 41
+  },
+  "positive_by_impact": {
+    "MEDIUM": 155,
+    "HIGH": 94,
+    "LOW": 10
+  },
+  "by_source": {
+    "GAIA": 432,
+    "SWE-Bench": 123
+  },
+  "positive_by_source": {
+    "GAIA": 198,
+    "SWE-Bench": 61
+  },
+  "goal_length_stats": {
+    "min": 76,
+    "max": 800,
+    "mean": 333.8954954954955,
+    "median": 265
+  },
+  "step_length_stats": {
+    "min": 41,
+    "max": 2000,
+    "mean": 774.1441441441441,
+    "median": 522
+  }
+}

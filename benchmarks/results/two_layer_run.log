@@ -1,0 +1,13 @@
+Loaded 555 samples.
+C:\Users\Administrator\Desktop\owncode\intent_auditor\embedding.py:288: UserWarning: Qdrant client version 1.15.1 is incompatible with server version 1.18.0. Major versions should match and minor version difference must not exceed 1. Set check_compatibility=False to skip version check.
+  self._client = QdrantClient(
+Threshold: 0.6
+Two-Layer: enabled=True, low=0.35, high=0.82
+  Single-layer: 0/555
+  Single-layer: 100/555
+  Single-layer: 200/555
+  Single-layer: 300/555
+  Single-layer: 400/555
+  Single-layer: 500/555
+  Two-Layer: 0/555
+  Two-Layer: 100/555

@@ -1,0 +1,353 @@
+{
+  "timestamp": "2026-06-04T21:56:55.172854",
+  "input_file": "benchmarks\\trail_pas\\trail_pas.jsonl",
+  "total_samples": 555,
+  "positive_samples": 259,
+  "negative_samples": 296,
+  "baselines": {
+    "always_pass": {
+      "name": "Always-Pass",
+      "metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "accuracy": 0.5333333333333333,
+        "tp": 0,
+        "fp": 0,
+        "fn": 259,
+        "tn": 296,
+        "total": 555,
+        "threshold": 0.6,
+        "auroc": 0.5
+      },
+      "category_breakdown": {
+        "Goal Deviation": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 65,
+          "tn": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 65
+        },
+        "Context Handling Failures": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 47,
+          "tn": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 47
+        },
+        "Resource Abuse": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 57,
+          "tn": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 57
+        },
+        "Poor Information Retrieval": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 41,
+          "tn": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 41
+        },
+        "Task Orchestration": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 49,
+          "tn": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 49
+        }
+      },
+      "impact_breakdown": {
+        "HIGH": {
+          "total": 94,
+          "detected": 0,
+          "recall": 0.0
+        },
+        "MEDIUM": {
+          "total": 155,
+          "detected": 0,
+          "recall": 0.0
+        },
+        "LOW": {
+          "total": 10,
+          "detected": 0,
+          "recall": 0.0
+        }
+      },
+      "source_breakdown": {
+        "GAIA": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 432
+        },
+        "SWE-Bench": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 123
+        }
+      }
+    },
+    "keyword_heuristic": {
+      "name": "Keyword-Heuristic",
+      "metrics": {
+        "precision": 0.47674418604651164,
+        "recall": 0.1583011583011583,
+        "f1": 0.23768115942028986,
+        "accuracy": 0.5261261261261261,
+        "tp": 41,
+        "fp": 45,
+        "fn": 218,
+        "tn": 251,
+        "total": 555,
+        "threshold": 0.6,
+        "auroc": 0.5031370656370656
+      },
+      "category_breakdown": {
+        "Goal Deviation": {
+          "tp": 12,
+          "fp": 0,
+          "fn": 53,
+          "tn": 0,
+          "precision": 0.2105,
+          "recall": 0.1846,
+          "f1": 0.1967,
+          "support": 65
+        },
+        "Context Handling Failures": {
+          "tp": 8,
+          "fp": 0,
+          "fn": 39,
+          "tn": 0,
+          "precision": 0.1509,
+          "recall": 0.1702,
+          "f1": 0.16,
+          "support": 47
+        },
+        "Resource Abuse": {
+          "tp": 8,
+          "fp": 0,
+          "fn": 49,
+          "tn": 0,
+          "precision": 0.1509,
+          "recall": 0.1404,
+          "f1": 0.1455,
+          "support": 57
+        },
+        "Poor Information Retrieval": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 37,
+          "tn": 0,
+          "precision": 0.0816,
+          "recall": 0.0976,
+          "f1": 0.0889,
+          "support": 41
+        },
+        "Task Orchestration": {
+          "tp": 9,
+          "fp": 0,
+          "fn": 40,
+          "tn": 0,
+          "precision": 0.1667,
+          "recall": 0.1837,
+          "f1": 0.1748,
+          "support": 49
+        }
+      },
+      "impact_breakdown": {
+        "HIGH": {
+          "total": 94,
+          "detected": 17,
+          "recall": 0.1809
+        },
+        "MEDIUM": {
+          "total": 155,
+          "detected": 23,
+          "recall": 0.1484
+        },
+        "LOW": {
+          "total": 10,
+          "detected": 1,
+          "recall": 0.1
+        }
+      },
+      "source_breakdown": {
+        "GAIA": {
+          "precision": 0.4167,
+          "recall": 0.1515,
+          "f1": 0.2222,
+          "support": 432
+        },
+        "SWE-Bench": {
+          "precision": 0.7857,
+          "recall": 0.1803,
+          "f1": 0.2933,
+          "support": 123
+        }
+      }
+    },
+    "random": {
+      "name": "Random",
+      "metrics": {
+        "precision": 0.4734848484848485,
+        "recall": 0.4826254826254826,
+        "f1": 0.4780114722753346,
+        "accuracy": 0.5081081081081081,
+        "tp": 125,
+        "fp": 139,
+        "fn": 134,
+        "tn": 157,
+        "total": 555,
+        "threshold": 0.6,
+        "auroc": 0.5
+      },
+      "category_breakdown": {
+        "Goal Deviation": {
+          "tp": 35,
+          "fp": 0,
+          "fn": 30,
+          "tn": 0,
+          "precision": 0.2011,
+          "recall": 0.5385,
+          "f1": 0.2929,
+          "support": 65
+        },
+        "Context Handling Failures": {
+          "tp": 17,
+          "fp": 0,
+          "fn": 30,
+          "tn": 0,
+          "precision": 0.109,
+          "recall": 0.3617,
+          "f1": 0.1675,
+          "support": 47
+        },
+        "Resource Abuse": {
+          "tp": 29,
+          "fp": 0,
+          "fn": 28,
+          "tn": 0,
+          "precision": 0.1726,
+          "recall": 0.5088,
+          "f1": 0.2578,
+          "support": 57
+        },
+        "Poor Information Retrieval": {
+          "tp": 19,
+          "fp": 0,
+          "fn": 22,
+          "tn": 0,
+          "precision": 0.1203,
+          "recall": 0.4634,
+          "f1": 0.191,
+          "support": 41
+        },
+        "Task Orchestration": {
+          "tp": 25,
+          "fp": 0,
+          "fn": 24,
+          "tn": 0,
+          "precision": 0.1524,
+          "recall": 0.5102,
+          "f1": 0.2347,
+          "support": 49
+        }
+      },
+      "impact_breakdown": {
+        "HIGH": {
+          "total": 94,
+          "detected": 46,
+          "recall": 0.4894
+        },
+        "MEDIUM": {
+          "total": 155,
+          "detected": 72,
+          "recall": 0.4645
+        },
+        "LOW": {
+          "total": 10,
+          "detected": 7,
+          "recall": 0.7
+        }
+      },
+      "source_breakdown": {
+        "GAIA": {
+          "precision": 0.4734,
+          "recall": 0.4949,
+          "f1": 0.484,
+          "support": 432
+        },
+        "SWE-Bench": {
+          "precision": 0.4737,
+          "recall": 0.4426,
+          "f1": 0.4576,
+          "support": 123
+        }
+      }
+    }
+  },
+  "missed_goal_deviation_by_keyword": [
+    {
+      "sample_id": "0035f455b3ff2295167a844f04d85d34_bc20feefb97e11e5_Goal_Deviation",
+      "trace_id": "0035f455b3ff2295167a844f04d85d34",
+      "source": "GAIA",
+      "impact": "HIGH",
+      "goal_preview": "I’m researching species that became invasive after people who kept them as pets released them. There’s a certain species of fish that was popularized as a pet by being the main character of the movie ",
+      "step_preview": "The plan lists steps involving `search_agent`, extraction, translation, and formatting. The \"Thought\" in Span 3 claims knowledge and immediately proceeds to \"Code\" calling `final_answer`, omitting the",
+      "description": "The system deviated significantly from the plan it generated in the previous step (Span 2). Instead of executing the planned steps for searching, extracting, and translating information (steps 2-5), i"
+    },
+    {
+      "sample_id": "01c5727165fc43899b3b594b9bef5f19_51aa11f619fa77bd_Goal_Deviation",
+      "trace_id": "01c5727165fc43899b3b594b9bef5f19",
+      "source": "GAIA",
+      "impact": "HIGH",
+      "goal_preview": "According to Openreview.net, at the NeurIPS 2022 Conference, how many papers by an author named Yuri were accepted with a \"certain\" recommendation?",
+      "step_preview": "The `search_agent` calls `final_answer` without having executed steps like systematically checking all submission pages, visiting detail pages for all candidates (e.g. Yuri Kuratov mentioned in earlie",
+      "description": "The LLM (search_agent) abandoned its most recent plan (generated in span d65ec360f7319e84), which involved systematically checking all pages and candidate papers for \"Yuri\" and \"certain\". It called `f"
+    },
+    {
+      "sample_id": "0242ca2533fac5b8b604a9060b3e15d6_6eeda98d187843e9_Goal_Deviation",
+      "trace_id": "0242ca2533fac5b8b604a9060b3e15d6",
+      "source": "GAIA",
+      "impact": "HIGH",
+      "goal_preview": "What two-word type of model did Manash Pratim Kashyap's and PS Fader's studies in customer retention studies published during 2018-2019 have in common (no punctuation)?",
+      "step_preview": "Thought: Based on my understanding of the customer retention literature and the methods employed in studies by both Manash Pratim Kashyap and PS Fader during 2018–2019, a common approach is to model r",
+      "description": "The system deviates from the planned steps by directly providing the final answer without using the search_agent tool as intended. It also provided a fabricated output."
+    },
+    {
+      "sample_id": "08be1639c58e086cf0bb8c269039973d_2ea5094b76cd15e7_Goal_Deviation",
+      "trace_id": "08be1639c58e086cf0bb8c269039973d",
+      "source": "GAIA",
+      "impact": "HIGH",
+      "goal_preview": "What are the EC numbers of the two most commonly used chemicals for the virus testing method in the paper about SPFMV and SPCSV in the Pearl Of Africa from 2016? Return the semicolon-separated numbers",
+      "step_preview": "The generated plan includes steps like \"1. Identify and locate the specific paper...\", \"2. Extract the virus testing protocol details from the paper...\", and \"3. Analyze the protocol...\", but the syst",
+      "description": "The system deviated significantly from its generated plan and the core task instruction by failing to locate and analyze the specified paper to find the required information. It relied on external gen"
+    },
+    {
+      "sample_id": "1427b326e21963a1228647ad8dff2bf4_1d70eddc9ca746fa_Goal_Deviation",
+      "trace_id": "1427b326e21963a1228647ad8dff2bf4",
+      "source": "GAIA",
+      "impact": "HIGH",
+      "goal_preview": "The YouTube channel Game Grumps began a Let’s Play of the game Sonic the Hedgehog (2006) in the year 2012. Thirty seconds into the first episode, a phrase is shown on the screen in white letters on a ",
+      "step_preview": "1. Use the search agent to locate the official first episode of Game Grumps’ Sonic the Hedgehog (2006) Let's Play from 2012 on YouTube. 4. Use the visualizer tool on the screenshot to extract the comp",
+      "description": "The model didn't use the search agent and the visualizer tools to locate the official first episode of Game Grumps’ Sonic the Hedgehog (2006) Let's Play from 2012 on YouTube, then Identify and extract"
+    }
+  ]
+}

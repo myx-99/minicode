@@ -1,0 +1,27 @@
+﻿# API Key
+.env
+
+# Python
+__pycache__/
+.pytest_cache/
+*.pyc
+*.pyo
+
+# IDE / Tools
+.claude/
+.agent/
+.codex/
+
+# Archives
+*.zip
+
+# Benchmark data (too large)
+benchmarks/data/
+benchmarks/reports/
+
+# Debug
+bug/
+
+# OS
+.DS_Store
+Thumbs.db
